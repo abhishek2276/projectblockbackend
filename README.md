@@ -2,7 +2,8 @@
 A full-stack application to upload and parse CAD (DXF) files, extract block data (like coordinates), and display it in a searchable interface.
 
 # git clone
-https://github.com/abhishek2276/projectblockbackend.git
+git clone https://github.com/abhishek2276/projectblockbackend.git
+in your terminal
 
 # ⚙️ Setup Instructions
 🔧 Prerequisites
