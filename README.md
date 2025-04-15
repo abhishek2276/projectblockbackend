@@ -29,10 +29,9 @@ npx sequelize-cli db:migrate
 
 
 npm start
-✅ Run Unit Tests
 
-npm test
-📁 Features
+
+# 📁 Features
 Upload DXF files
 
 Extract and store block names and coordinates
@@ -58,7 +57,7 @@ x	FLOAT	X coordinate
 y	FLOAT	Y coordinate
 z	FLOAT	Z coordinate
 # 🛠️ API Documentation
-🔹 POST /api/files/upload
+# 🔹 POST /api/files/upload
 Description: Upload DXF file and store its blocks
 Body: multipart/form-data with file field
 Response:
@@ -68,7 +67,7 @@ Response:
   "message": "File uploaded successfully!",
 
 }
-🔹 GET /api/files/blocks/${id}
+# 🔹 GET /api/files/blocks/${id}
 Description: Get block by id
 Response:
 
@@ -94,7 +93,7 @@ coordinates:[
         "z": 0
   ...
 ]
-🔹 GET /api/files/blocks
+# 🔹 GET /api/files/blocks
 Description: Get all the stored blocks 
 
 # 📚 Reasoning Behind Library Choices
