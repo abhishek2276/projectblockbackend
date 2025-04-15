@@ -207,14 +207,18 @@ router.get('/blocks', async (req, res) => {
 });
 
 router.get('/blocks/:id', async (req, res) => {
+  const { id } = req.params;
+
   try {
-    const block = await Block.findByPk(req.params.id);
+    const block = await Block.findByPk(id);
+
     if (!block) {
       return res.status(404).json({ message: 'Block not found.' });
     }
+
     res.status(200).json(block);
   } catch (error) {
-    res.status(500).json({ message: 'Error retrieving block details.', error: error.message });
+    res.status(500).json({ message: 'Error retrieving block.', error: error.message });
   }
 });
 
